@@ -2,7 +2,7 @@ resource "aws_vpc" "this" {
   cidr_block = var.vpc_cidr
 
   tags = merge(
-    { "Nombre" = var.vpc_name },
+    { "CNAME" = var.vpc_name },
     var.tags
   )
 }
